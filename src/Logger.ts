@@ -52,10 +52,10 @@ class Logger implements ILogger {
     }
 
     // This method logs a message with the "error" log level. 
-    // It calls the log method with LogLevel.ERROR and the provided message.
+    // It calls the log method with `LogLevel.ERROR` and the provided message.
     public error(message: string): void {
         this.log(LogLevel.ERROR, message);
     }
 }
 
-export { Logger };
+export { Logger }; // Exports the Logger class so it can be imported and used in other parts of the application.
